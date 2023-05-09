@@ -4,7 +4,7 @@ import torch
 from pathlib import Path
 
 import transforms
-from my_dataset import YOLODataset
+from my_dataset import VOCDataSet
 from src.ssd_model import SSD300, Backbone
 import train_utils.train_eval_utils as utils
 from train_utils import get_coco_api_from_dataset
