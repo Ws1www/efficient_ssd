@@ -1,0 +1,22 @@
+{
+    "storagetank": 1,
+    "baseballfield": 2,
+    "tenniscourt": 3,
+    "basketballcourt": 4,
+    "windmill": 5,
+    "vehicle": 6,
+    "harbor": 7,
+    "ship": 8,
+    "airplane": 9,
+    "bridge": 10,
+    "overpass": 11,
+    "Expressway-toll-station": 12,
+    "trainstation": 13,
+    "chimney": 14,
+    "groundtrackfield": 15,
+    "dam": 16,
+    "Expressway-Service-area": 17,
+    "stadium": 18,
+    "airport": 19,
+    "golffield": 20
+}
