@@ -93,7 +93,7 @@ def main(parser_data):
                                                   num_workers=nw,
                                                   collate_fn=train_dataset.collate_fn)
 
-    model = create_model(num_classes=args.num_classes+1, pre_ssd_path=r'ssd300-46.pth')
+    model = create_model(num_classes=args.num_classes+1, pre_ssd_path=r'/kaggle/working/efficient_ssd/ssd300-46.pth')
     model.to(device)
 
     # define optimizer
@@ -182,7 +182,7 @@ if __name__ == '__main__':
     # 检测的目标类别个数，不包括背景
     parser.add_argument('--num_classes', default=20, type=int, help='num_classes')
     # 训练数据集的根目录(VOCdevkit)
-    parser.add_argument('--data-path', default='/kaggle/input/diordata', help='dataset')
+    parser.add_argument('--data-path', default='/kaggle/input/yg1234/yg', help='dataset')
     # 文件保存地址
     parser.add_argument('--output-dir', default='/kaggle/working/', help='path where to save')
     # 若需要接着上次训练，则指定上次训练保存权重文件地址
@@ -190,7 +190,7 @@ if __name__ == '__main__':
     # 指定接着从哪个epoch数开始训练
     parser.add_argument('--start_epoch', default=0, type=int, help='start epoch')
     # 训练的总epoch数
-    parser.add_argument('--epochs', default=30, type=int, metavar='N',
+    parser.add_argument('--epochs', default=50, type=int, metavar='N',
                         help='number of total epochs to run')
     # 训练的batch size
     parser.add_argument('--batch_size', default=4, type=int, metavar='N',
