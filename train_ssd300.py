@@ -93,7 +93,7 @@ def main(parser_data):
                                                   num_workers=nw,
                                                   collate_fn=train_dataset.collate_fn)
 
-    model = create_model(num_classes=args.num_classes+1, pre_ssd_path=r'/kaggle/working/efficient_ssd/ssd300-46.pth')
+    model = create_model(num_classes=args.num_classes+1, pre_ssd_path=r'/kaggle/working/efficient_ssd/ssd300-30.pth')
     model.to(device)
 
     # define optimizer
