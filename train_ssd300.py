@@ -69,7 +69,7 @@ def main(parser_data):
 
     VOC_root = parser_data.data_path
 
-    train_dataset = YOLODataset(VOC_root, data_transform['train'])
+    train_dataset = VOCDataSet(VOC_root, data_transform['train'])
     # 注意训练时，batch_size必须大于1
     batch_size = parser_data.batch_size
     assert batch_size > 1, "batch size must be greater than 1"
